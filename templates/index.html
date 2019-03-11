@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- $extends means it is inheriting from layout.html-->
+<!--this is the first page that will be rendered and has a link that redirects to the login page-->
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Overview</h1>
+  <p>Do you want to <a href="{{ url_for('login') }}">log in?</a>
+{% endblock %}
+</body>
+</html>
